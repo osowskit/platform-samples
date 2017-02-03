@@ -14,7 +14,7 @@ post '/payload' do
 
     # Get branch information
     branch_head = parsed['ref']
-    branch_name = branch_head.split('/').last
+    branch_name = branch_head.chomp("refs/heads")
     repo_owner = parsed["repository"]["owner"]["name"]
 
     # Create URL to look up Pull Requests for this branch
