@@ -41,6 +41,9 @@
   * **Setup URL** `[PUBLIC_URL]/installed`
   * **Setup URL** `[PUBLIC_URL]/payload`
     ![App Configuration Screen](https://user-images.githubusercontent.com/768821/31565645-63f8b45c-b01c-11e7-94cd-8f85171ef207.png)
+  * Allow Write permissions for `Issues`
+  * **Subscribe to Events** select `Repository`
+  * Select **Only on this account** for now. You can update this later.
 1. Create and download the `private key` to the same directory as your application.
 
 ### Development Configuration (Part II)
@@ -55,4 +58,6 @@
 1. Open a browser to verify the public URL is serving requests
 
     `open [PUBLIC_URL]`
+1. Install the App on a repository you control
+1. Confirm there is an issue in the repository.
 1. :tada:
