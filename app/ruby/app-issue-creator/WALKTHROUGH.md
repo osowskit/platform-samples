@@ -1,6 +1,6 @@
 
 
-### Development Requirements
+### Setting up your Development Environment
 
 1. Install [Brew](https://brew.sh/)
 1. Install Ruby
@@ -11,7 +11,7 @@
     $ `gem install bundler`
 1. Install [ngrok](https://ngrok.com/). Optionally install [localtunnel](https://localtunnel.github.io/www/) if you have [NPM](https://www.npmjs.com/) installed.
 
-### Development Configuration (Part I)
+### Configuring your Development Environment (Part I)
 
 :chicken: :egg: the ruby application requires information provided by GitHub to execute. We'll start 
 
@@ -31,7 +31,7 @@
 
     `lt -p 4567 -s osowskit` will result in `https://osowskit.localtunnel.me`
     
-### Application Setup
+### Setting up a GitHub App
 
 1. Read these steps and **notes** prior to [following the instructions](https://developer.github.com/apps/building-integrations/setting-up-and-registering-github-apps/registering-github-apps/)
 
@@ -48,7 +48,7 @@
   * Select **Only on this account** for now. You can update this later.
 1. Create and download the `private key` to the same directory as your application.
 
-### Development Configuration (Part II)
+### Configuring your Development Environment (Part II)
 
 1. Copy and save the `APP_ID` and path to the `private key` to the yaml file. 
 1. Run the ruby application, which will run on port 4567:
