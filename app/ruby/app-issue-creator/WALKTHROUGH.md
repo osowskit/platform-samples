@@ -18,7 +18,9 @@
 1. Clone the repository 
 
     `git clone git@github.com:osowskit/platform-samples.git && cd ./platform-samples/app/ruby/app-issue-creator/`      
+1. Install the project's dependencies
 
+    `bundle install`
 1. In a new terminal window, run ngrok, or localtunnel, to expose port `4567`. For localtunnel, you can request a specific subdomain.
 
     `./ngrok http 4567`
