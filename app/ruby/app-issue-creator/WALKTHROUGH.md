@@ -31,17 +31,21 @@
     
 ### Application Setup
 
-1. Read these steps prior and **notes** to [following the instructions](https://developer.github.com/apps/building-integrations/setting-up-and-registering-github-apps/registering-github-apps/)
+1. Read these steps and **notes** prior to [following the instructions](https://developer.github.com/apps/building-integrations/setting-up-and-registering-github-apps/registering-github-apps/)
 
-**Notes**: 
-* GitHub App Name must be globally unique. For now, choose the format `[USERNAME]-bot`  
-
-1. Enter values for your App using the `[`
-
+    **Notes**: 
+    * GitHub App Name must be globally unique. For now, choose the format `[USERNAME]-bot`.  
+1. Enter values for your App using the `[PUBLIC_URL]`
+  * **Homepage URL** `[PUBLIC_URL]`
+  * **User authorization callback URL** `[PUBLIC_URL]/callback`
+  * **Setup URL** `[PUBLIC_URL]/installed`
+  * **Setup URL** `[PUBLIC_URL]/payload`
+    ![App Configuration Screen](https://user-images.githubusercontent.com/768821/31565645-63f8b45c-b01c-11e7-94cd-8f85171ef207.png)
+1. Create and download the `private key` to the same directory as your application.
 
 ### Development Configuration (Part II)
 
-1. Copy the `APP_ID` and path to the `private key` to the yaml file. 
+1. Copy and save the `APP_ID` and path to the `private key` to the yaml file. 
 1. Run the ruby application, which will run on port 4567:
 
     `ruby server.rb`
