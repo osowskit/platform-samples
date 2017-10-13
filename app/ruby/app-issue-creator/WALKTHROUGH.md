@@ -11,15 +11,13 @@
     $ `gem install bundler`
 1. Install [ngrok](https://ngrok.com/). Optionally install [localtunnel](https://localtunnel.github.io/www/) if you have [NPM](https://www.npmjs.com/) installed.
 
-### Development Configuration
+### Development Configuration (Part I)
+
+:chicken: :egg: the ruby application requires information provided by GitHub to execute. We'll start 
 
 1. Clone the repository 
 
     `git clone git@github.com:osowskit/platform-samples.git && cd ./platform-samples/app/ruby/app-issue-creator/`      
-
-1. Run the ruby application
-
-    `ruby server.rb`
 
 1. In a new terminal window, run ngrok, or localtunnel, to expose port `4567`. For localtunnel, you can request a specific subdomain.
 
@@ -36,4 +34,21 @@
 1. Read these steps prior and **notes** to [following the instructions](https://developer.github.com/apps/building-integrations/setting-up-and-registering-github-apps/registering-github-apps/)
 
 **Notes**: 
-* GitHub App Name must be globally unique. For now, choose the format `[username]-bot`  
+* GitHub App Name must be globally unique. For now, choose the format `[USERNAME]-bot`  
+
+1. Enter values for your App using the `[`
+
+
+### Development Configuration (Part II)
+
+1. Copy the `APP_ID` and path to the `private key` to the yaml file. 
+1. Run the ruby application, which will run on port 4567:
+
+    `ruby server.rb`
+1. Open a browser to verify the application is serving requests
+
+    `open http://localhost:4567`
+1. Open a browser to verify the public URL is serving requests
+
+    `open [PUBLIC_URL]`
+1. :tada:
