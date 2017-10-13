@@ -11,9 +11,9 @@
     $ `gem install bundler`
 1. Install [ngrok](https://ngrok.com/). Optionally install [localtunnel](https://localtunnel.github.io/www/) if you have [NPM](https://www.npmjs.com/) installed.
 
-### Configuring your Development Environment (Part I)
+### Configuring your Development Environment
 
-:chicken: :egg: the ruby application requires information provided by GitHub to execute. We'll start 
+:chicken: :egg: the ruby application requires information provided by GitHub to execute.
 
 1. Open a terminal window and clone the repository 
 
@@ -48,7 +48,7 @@
   * Select **Only on this account** for now. You can update this later.
 1. Create and download the `private key` to the same directory as your application.
 
-### Configuring your Development Environment (Part II)
+### Running the application
 
 1. Copy and save the `APP_ID` and path to the `private key` to the yaml file. 
 1. Run the ruby application, which will run on port 4567:
