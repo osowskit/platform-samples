@@ -15,7 +15,7 @@
 
 :chicken: :egg: the ruby application requires information provided by GitHub to execute. We'll start 
 
-1. Clone the repository 
+1. Open a terminal window and clone the repository 
 
     `git clone git@github.com:osowskit/platform-samples.git && cd ./platform-samples/app/ruby/app-issue-creator/`      
 1. Install the project's dependencies
