@@ -51,7 +51,7 @@
 
 ### Running the application
 
-1. Copy and save the `APP_ID` and path to the `private key` to the yaml file. 
+1. Copy and save the `APP_ID` and path to the `private key` to the [`app-config.yaml`](https://github.com/osowskit/platform-samples/blob/master/app/ruby/app-issue-creator/app-config.yaml) file. 
 1. Run the ruby application, which will run on port 4567:
 
     `ruby server.rb`
