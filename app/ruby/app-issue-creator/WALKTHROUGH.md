@@ -38,14 +38,15 @@
     **Notes**: 
     * GitHub App Name must be globally unique. For now, choose the format `[USERNAME]-bot`.  
 1. Enter values for your App using the `[PUBLIC_URL]`
-  * **Homepage URL** `[PUBLIC_URL]`
-  * **User authorization callback URL** `[PUBLIC_URL]/callback`
-  * **Setup URL** `[PUBLIC_URL]/installed`
-  * **Setup URL** `[PUBLIC_URL]/payload`
+    * **Homepage URL** `[PUBLIC_URL]`
+    * **User authorization callback URL** `[PUBLIC_URL]/callback`
+    * **Setup URL** `[PUBLIC_URL]/installed`
+    * **Setup URL** `[PUBLIC_URL]/payload`
     ![App Configuration Screen](https://user-images.githubusercontent.com/768821/31565645-63f8b45c-b01c-11e7-94cd-8f85171ef207.png)
-  * Allow Write permissions for `Issues`
-  * **Subscribe to Events** select `Repository`
-  * Select **Only on this account** for now. You can update this later.
+    
+    * Allow Write permissions for `Issues`
+    * **Subscribe to Events** select `Repository`
+    * Select **Only on this account** for now. You can update this later.
 1. Create and download the `private key` to the same directory as your application.
 
 ### Running the application
