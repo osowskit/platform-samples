@@ -1,0 +1,13 @@
+# String Ex. "Iv1.f1bd5257f1514dcc"
+client_id:  "<replace>"
+
+# String Ex: "c5836c7225ea440bff4c1355dee7ce6c16c8db19"
+client_secret: "<replace>"
+
+# Name of Private Key file. Ideally saved in the same folder as `server.rb` 
+# String Ex. "tommy.pem"
+private_key: "<replace>"
+
+# Application ID provided by GitHub
+# Integger Ex. 1234
+app_id: <replace>

@@ -3,16 +3,33 @@ require 'jwt'
 require 'json'
 require 'active_support/all'
 require 'octokit'
+require 'yaml'
 
 begin
-  GITHUB_APP_ID = ENV.fetch("GITHUB_APP_ID")
-  GITHUB_PRIVATE_KEY = ENV.fetch("GITHUB_APP_PRIVATE_KEY")
-rescue KeyError
-  $stderr.puts "To run this script, please set the following environment variables:"
-  $stderr.puts "- GITHUB_APP_ID: GitHub App ID"
-  $stderr.puts "- GITHUB_APP_PRIVATE_KEY: GitHub App Private Key"
-  exit 1
+  yml = File.open('app-config.yaml')
+  contents = YAML.load(yml)
+  GITHUB_CLIENT_ID = contents["client_id"]
+  GITHUB_CLIENT_SECRET = contents["client_secret"]
+  GITHUB_APP_KEY = File.read(contents["private_key"])
+  GITHUB_APP_ID = contents["app_id"]
+rescue Exception => e
+  # Try environment variables
+  begin
+    GITHUB_CLIENT_ID = ENV.fetch("GITHUB_CLIENT_ID")
+    GITHUB_CLIENT_SECRET =  ENV.fetch("GITHUB_CLIENT_SECRET")
+    GITHUB_APP_KEY = ENV.fetch("GITHUB_APP_KEY")
+    GITHUB_APP_ID = ENV.fetch("GITHUB_APP_ID")
+  rescue KeyError
+    $stderr.puts "To run this script, please set the following environment variables:"
+    $stderr.puts "- GITHUB_CLIENT_ID: GitHub Developer Application Client ID"
+    $stderr.puts "- GITHUB_CLIENT_SECRET: GitHub Developer Application Client Secret"
+    $stderr.puts "- GITHUB_APP_KEY: GitHub App Private Key"
+    $stderr.puts "- GITHUB_APP_ID: GitHub App ID"
+    exit 1
+  end
 end
+
+
 @client = nil
 
 # Webhook listener
