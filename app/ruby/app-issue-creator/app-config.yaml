@@ -9,5 +9,5 @@ client_secret: "<replace>"
 private_key: "<replace>"
 
 # Application ID provided by GitHub
-# Integger Ex. 1234
+# Integer Ex. 1234
 app_id: <replace>
