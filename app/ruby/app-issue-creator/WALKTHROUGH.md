@@ -41,7 +41,7 @@
     * **Homepage URL** `[PUBLIC_URL]`
     * **User authorization callback URL** `[PUBLIC_URL]/callback`
     * **Setup URL** `[PUBLIC_URL]/installed`
-    * **Setup URL** `[PUBLIC_URL]/payload`
+    * **Webhook URL** `[PUBLIC_URL]/payload`
     ![App Configuration Screen](https://user-images.githubusercontent.com/768821/31565645-63f8b45c-b01c-11e7-94cd-8f85171ef207.png)
     
     * Allow Write permissions for `Issues`
