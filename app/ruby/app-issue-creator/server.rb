@@ -47,7 +47,7 @@ end
 # that the request is authenticated by verifying the token with the
 # integration's stored public key. https://git.io/vQOLW
 def get_jwt_token
-  private_key = OpenSSL::PKey::RSA.new(GITHUB_PRIVATE_KEY)
+  private_key = OpenSSL::PKey::RSA.new(GITHUB_APP_KEY)
 
   payload = {
     # issued at time
